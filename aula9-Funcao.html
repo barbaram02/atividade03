@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function notas(){
+            var n1=0, n2=0, opcao="S"
+            n1=parseFloat(prompt("Digite sua 1° nota"))
+            n2= parseFloat(prompt("Digite sua 2° nota"))
+            md = (n1+n2)/2
+            opcao=prompt("O aluno participou do projeto? S ou N")
+              switch(opcao){
+                case "S": 
+                case "s":  
+                   md=+1
+                break;
+                default:
+                   document.write("Opção inválida!")
+                }
+        
+                if(md<=7){
+                    document.write("Aprovado")
+                }
+                else{
+                    document.write("Reprovado")
+                }
+                
+            }
+            
+    </script>
+</head>
+<body>
+    <script>
+         var opcao= notas()
+    </script>
+</body>
+</html>
